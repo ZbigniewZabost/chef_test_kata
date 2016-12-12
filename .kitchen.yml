@@ -1,0 +1,22 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: debian-jessie
+
+suites:
+  - name: default
+    run_list:
+      - recipe[elastalert]
+    verifier:
+      inspec_tests:
+        - test/recipes
+    attributes:
