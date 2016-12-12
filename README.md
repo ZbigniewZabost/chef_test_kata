@@ -1,4 +1,4 @@
-# Test kata cookbook
+# Code kata - chef cookbook testing
 
 ## Overview
 This chef cookbook installs and configures [Yelp's elastalert](https://github.com/Yelp/elastalert).
